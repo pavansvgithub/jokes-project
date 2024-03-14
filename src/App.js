@@ -5,14 +5,20 @@ import Homepage from "./Homepage";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route exact path="/" element={<Login />} />
-          <Route path="/homepage" element={<Homepage />} />
-        </Routes>
+    <>
+      <div className="text-center" style={{ border: "2px solid black" }}>
+        <p>Username: pavan123</p>
+        <p>Password: pavan#456</p>
       </div>
-    </Router>
+      <Router>
+        <div className="App">
+          <Routes>
+            <Route exact path="/" element={<Login />} />
+            <Route path="/homepage" element={<Homepage />} />
+          </Routes>
+        </div>
+      </Router>
+    </>
   );
 }
 
